@@ -1,0 +1,10 @@
+{
+  "appId": "app.dibuja.juego",
+  "appName": "Dibuja y adivina",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true,
+    "allowNavigation": ["*"]
+  }
+}

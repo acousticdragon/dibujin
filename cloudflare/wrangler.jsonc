@@ -1,0 +1,21 @@
+{
+  // Publica el juego (carpeta www) y el servicio que reparte credenciales TURN en /api/turn
+  "name": "dibuja-juego",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "../www",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "LIMITER", "class_name": "Limiter" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Limiter"] }],
+  "vars": {
+    "MAX_PER_DAY": "3000",
+    "MAX_PER_IP_HOUR": "20",
+    "TTL": "14400",
+    "ALLOWED_ORIGINS": "*"
+  }
+}

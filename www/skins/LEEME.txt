@@ -1,0 +1,1 @@
+Pon aquí las imágenes de tus skins (por ejemplo don.png) y regístralas en www/skins.json

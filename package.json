@@ -1,0 +1,30 @@
+{
+  "name": "dibuja-juego",
+  "version": "0.1.0",
+  "description": "Dibuja y adivina - juego de dibujo para jugar con amigos",
+  "main": "electron/main.js",
+  "author": "Tu nombre",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "servidor": "node server/lan-server.js",
+    "windows": "electron-builder --win nsis --x64 --publish never"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "app.dibuja.juego",
+    "productName": "Dibuja y adivina",
+    "directories": { "output": "dist" },
+    "files": ["electron/**/*", "server/**/*", "www/**/*", "package.json"],
+    "win": { "target": [{ "target": "nsis", "arch": ["x64"] }], "icon": "www/icon-512.png" },
+    "nsis": { "oneClick": true, "perMachine": false, "createDesktopShortcut": true }
+  }
+}

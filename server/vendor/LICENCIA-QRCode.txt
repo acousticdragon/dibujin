@@ -1,0 +1,4 @@
+QRCode for JavaScript - Copyright (c) 2009 Kazuhiko Arase (http://www.d-project.com/)
+Licencia MIT: https://opensource.org/licenses/MIT
+QR Code es marca registrada de DENSO WAVE INCORPORATED.
+Copia incluida desde el paquete qrcode-terminal (vendor/QRCode).

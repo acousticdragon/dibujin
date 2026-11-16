@@ -1,0 +1,14 @@
+{
+  "turn": {
+    "endpoint": "",
+    "metered": {
+      "app": "",
+      "key": ""
+    },
+    "custom": []
+  },
+  "downloads": {
+    "android": "",
+    "windows": ""
+  }
+}
