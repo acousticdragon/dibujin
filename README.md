@@ -49,7 +49,13 @@ Si una compilación falla, copia el mensaje de error y mándamelo: es la parte q
 Prueba del servicio sin internet: `node cloudflare/test/probar.mjs`.
 
 ## Cómo se juega
-Cada turno una persona elige 1 de 3 palabras y dibuja; los demás escriben su respuesta. Más rápido = más puntos.
-Modos: **Online** (salas con código, QR o enlace, voz, chat, reacciones, contraseña), **Local** (un solo celular) y **Wi-Fi local**.
-Las monedas, el personaje y la tienda se guardan en el dispositivo (clave `dibuja1` en `index.html`, constante `KEY`).
+Cada turno una persona elige una palabra y la dibuja; los demás escriben su respuesta en el chat. Más rápido = más puntos.
+- **Online:** salas con código, QR o enlace, voz, chat, reacciones, contraseña y expulsión. **Salas abiertas** y **⚡ Partida rápida** para jugar con gente nueva.
+- **Local:** un solo celular. **Wi-Fi local:** sin internet (ver arriba).
+- **Votos:** al terminar cada dibujo se puede votar 👍/👎. Cada 👍 suma 10 puntos a quien dibujó. Al final se marca ⭐ el dibujo más votado.
+- **Portada:** el menú muestra una portada que se dibuja sola. Tocándola puedes dibujar la tuya, o usar cualquier dibujo de la partida como portada.
+- **Opciones de partida:** rondas, tiempo, palabras asignadas o 3 a elegir, 0 a 3 pistas de letras, temas, palabras propias y "solo mis palabras".
+- **Herramientas:** lápiz, goma, balde, deshacer, borrar, 4 tamaños, 16 colores y color libre 🎨. Paletas y pinceles (neón, spray, arcoíris) se desbloquean con monedas.
+- **Estadísticas:** partidas, victorias, aciertos y dibujos.
+Las monedas, el personaje y la tienda se guardan en el dispositivo (clave `dibuja1`, constante `KEY` en `index.html`).
 La cuenta compartida entre juegos se hará más adelante.
